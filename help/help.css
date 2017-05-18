@@ -39,6 +39,9 @@ body {
 .nav-tabs li {
     float:right;
 }
+.nav-tabs>li>a,.nav-tabs>li>a:visited,.nav-tabs>li>a:link ,.nav-tabs>li.active>a,.nav-tabs>li.active>a:visited,.nav-tabs>li.active>a:link{
+    border: none;
+}
 .nav-tabs>li>a,.nav-tabs>li>a:hover,.nav-tabs>li>a:visited,.nav-tabs>li>a:link{
     margin-right:25px;
     background-color:#dddddd;
@@ -47,7 +50,7 @@ body {
     color:#aaaaaa;
 }
 
-.nav-tabs>li.closeit a{
+.nav-tabs>li.closeit a,.nav-tabs>li.closeit a:visited,.nav-tabs>li.closeit a:link{
      background-color:#555555 !important;
      color:white;
 }
@@ -57,7 +60,9 @@ body {
 }
 
 .nav>li>a{
-    top:1px;
+    top:0px;
+    padding:5px 20px;
+    font-size: 12px;    
 }
 .nav-tabs{
     border-bottom: 0;
@@ -65,10 +70,11 @@ body {
 .nav-tabs>li.tabs>a:after,.nav-tabs>li.tabs>a:before{
   content:" ";
   position: absolute;
-  top:1px;
+  top:0;
+  display: block;
   width: 20px;
   height: 100%;
-  background-color: inherit; 
+  background-color: inherit;
 }
 
 .nav-tabs>li.closeit a,.nav-tabs>li:nth-child(2) a{
@@ -91,3 +97,37 @@ body {
 .panel, .panel-body{
     border-radius:1px;
 }
+
+#faq .panel-body .right{
+    border-left:1px solid #cccccc;
+}
+
+#faq .panel-body .left,#faq .panel-body .right{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.panel-body{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+
+.btn-default{
+    box-shadow:1px 1px 1px .1px #ccc;
+    background-image: linear-gradient(to bottom,#ffffff,#ddd);
+    border-bottom: 2px;
+    color:#555;
+}
+#faq .panel-body .left p{
+    margin-top:20px;
+    margin-bottom: 20px;
+    color:#555;
+} 
+
+#faq .panel-body .flex-container .highlight{
+    font-size: 20px;
+    font-weight: 100;
+    color:#333333;
+    margin-top:15%;
+}  
