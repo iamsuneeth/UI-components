@@ -4,7 +4,8 @@ body {
 }
 
 .optionWrapper{
-    padding : 10px;
+    margin:30px;
+    
 }
 
 .optionWrapper .option p{
@@ -12,8 +13,15 @@ body {
 }
 
 .optionWrapper .option{
-    margin:20px 0;
     color: #0079cc;
+    padding:20px;
+    border:1px solid transparent;
+}
+
+.optionWrapper .option:hover{
+    background-color: #f8f8f8;
+    border:1px solid #cccccc;
+    border-radius: 3px;
 }
 
 .searchBox .input-group-addon{
@@ -25,11 +33,40 @@ body {
     z-index:4
 }
 
+.mailto .input-group-addon{
+    background:none;
+    border:none;
+    top:2px;
+    left:2px;
+    color:#222;
+    position:absolute;
+    z-index:4
+}
+
 .searchBox .form-control{
     box-shadow: none;
     border-radius:30px !important;
     z-index:1;
     padding-left:40px;
+}
+
+#mail .form-control{
+    box-shadow: none;
+    border-radius:2px !important;
+    z-index:1;
+    width:400px;
+    padding:1px 5px;
+}
+
+#mail input.form-control{
+    height:30px
+}
+#mail .mailto .form-control{
+}
+#mail .mailto .form-control[disabled]{
+    padding-left:40px;    
+    background-color:#dddddd;
+    box-shadow:inset 0 0 .1px.5px #ccc !important;
 }
 
 .panel-body{
@@ -130,4 +167,31 @@ body {
     font-weight: 100;
     color:#333333;
     margin-top:15%;
-}  
+}
+
+#mail {
+    max-width:600px;
+}
+
+.form{
+    padding:20px 0;
+}
+
+.form>div{
+    margin:20px;
+}
+.form .input-group{
+    width:100%;
+}
+
+.btn.attach {
+    background:none;
+    color:#0079cc;
+}
+.btn-primary{
+    background-image: linear-gradient(to bottom,#456789,#123456);
+}
+.tab-pane{
+    box-shadow: 0 -3px 11px rgba(0,0,0,0.25), -1px 0px 14px rgba(0,0,0,0.22);
+}
+ 

@@ -25,7 +25,7 @@
         <li class="active tabs"><a data-toggle="tab" href="#chat"><i class="fa fa-comment" aria-hidden="true"></i> Live Chat</a></li>
     </ul>
     </div>
-    <div class="tab-content clear-fix">
+    <div class="tab-content pull-right clear-fix">
         <div class="tab-pane active" id="chat">
             <div class="panel panel-default">
             <div class="panel-body">
@@ -79,6 +79,8 @@
                                         </p>
                                         <p>Managing Candidates</p>
                                   </div>
+                                </div>  
+                                <div class="row">
                                     <div class="col col-lg-4 text-center option">
                                        <p class="icon">
                                            <span class="fa-stack fa-lg">
@@ -116,7 +118,32 @@
         <div class="tab-pane" id="mail">
             <div class="panel panel-default">
             <div class="panel-body">
-                Basic panel example2
+                <div class="row flex-container">
+                    <div class="col form">
+                        <div class="mailto">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">To</span>
+                            <input type="text" class="form-control" value="support@recruiterbox.com" disabled aria-describedby="basic-addon1">
+                        </div>
+                        </div>
+                        <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Subject" aria-describedby="basic-addon1">
+                        </div>
+                        </div>
+                        <div>
+                            <div class="input-group">
+                                <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="Message.."></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-group">
+                                <button class="btn pull-left attach"><i class="fa fa-paperclip" aria-hidden="true"></i> Attach files</button>
+                                <button class="btn btn-primary pull-right">Send Mail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             </div>
         </div>
