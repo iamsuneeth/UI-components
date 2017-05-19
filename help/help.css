@@ -14,8 +14,9 @@ body {
 
 .optionWrapper .option{
     color: #0079cc;
-    padding:20px;
+    padding:30px;
     border:1px solid transparent;
+    transition: background-color 300ms ease-out,border-color 300ms ease-in-out; 
 }
 
 .optionWrapper .option:hover{
@@ -60,8 +61,6 @@ body {
 
 #mail input.form-control{
     height:30px
-}
-#mail .mailto .form-control{
 }
 #mail .mailto .form-control[disabled]{
     padding-left:40px;    
@@ -112,6 +111,10 @@ body {
   width: 20px;
   height: 100%;
   background-color: inherit;
+}
+
+.tab-pane.no-shadow{
+    box-shadow:0;
 }
 
 .nav-tabs>li.closeit a,.nav-tabs>li:nth-child(2) a{
@@ -208,11 +211,51 @@ body {
 .btn.attach {
     background:none;
     color:#0079cc;
+    transition:color 500ms ease;
+}
+.btn.attach:hover{
+    background:none;
+    color:#123456;
 }
 .btn-primary{
     background-image: linear-gradient(to bottom,#456789,#123456);
+    transition: background-image 500ms ease;
+}
+.btn-primary:hover{
+    background-image: linear-gradient(to top,#456789,#123456);
 }
 .tab-pane{
     box-shadow: 0 -3px 11px rgba(0,0,0,0.25), -1px 0px 14px rgba(0,0,0,0.22);
 }
- 
+
+.form-control.hidden.placeholder:after {
+    opacity: 0;
+}
+
+ .tab-content>.tab-pane{
+     transition:display 1s ease;
+ }
+@media only screen and (max-width : 992px) {
+        .searchBox .input-group{
+            margin-left:-40px;
+        }
+
+        #faq .panel-body .flex-container .highlight{
+            margin-top:5%;
+        }
+    }
+
+@media only screen and (max-width : 456px) {
+        .nav-tabs span{
+            display:none;
+        }
+        #chat .chatbox{
+            width:80%;
+        }
+        #mail {
+            width:100%;
+        }
+        #mail .form-control{
+            width: 100%;
+        }
+    }
