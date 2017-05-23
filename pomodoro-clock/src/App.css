@@ -8,9 +8,12 @@
 }
 
 .App-header {
-  background-color: #222;
   padding: 20px;
   color: white;
+}
+.App{
+  background-color: #222;
+  color:white;
 }
 
 .App-intro {
@@ -26,29 +29,25 @@
   }
 }
 
-.clock div p {
-  font-size: 50px;
-}
-
 #svg circle {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 1s linear;
-  stroke: #666;
-  stroke-width: 2em;
+  stroke: #333;
+  stroke-width: .8em;
 }
 
 #svg #bar {
-  stroke: #FF9F1E;
+  stroke: #10ff00;
 }
 
 #cont {
   display: block;
   height: 400px;
   width: 400px;
-  margin: 2em auto;
-  box-shadow: 0 0 1em black;
+  margin: auto;
   border-radius: 100%;
   position: relative;
+  font-size: 1.5em;
 }
 
 #cont:after {
@@ -58,7 +57,6 @@
   width: 320px;
   left: 50%;
   top: 50%;
-  box-shadow: inset 0 0 1em #888;
   content: attr(data-ptt);
   margin-top: -160px;
   margin-left: -160px;
@@ -73,7 +71,8 @@ svg:not(:root) {
 }
 
 .values .content {
-  padding:5px;
+  font-size: 2em;
+  padding:.2em;
 }
 
 
@@ -92,3 +91,45 @@ svg:not(:root) {
 }
 }
 
+
+svg {
+  transform: rotate(270deg);
+}
+
+.btn.counter{
+  background:none;
+  font-size: 1.5em;
+  padding: .2em;
+  vertical-align: top;
+}
+.btn.counter:focus{
+  outline:none;
+}
+.group .btn-default{
+  margin:.2em 1em;
+  min-width:6em;
+  background: none;
+  border:none;
+  color:white;
+  font-size: 1.5em;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+}
+.group .btn-default:hover{
+  border-bottom: 1px solid #10ff00;
+}
+.group .btn-default:focus,.group .btn-default:active{
+  outline:none;
+  background: none;
+}
+.group .btn-default[disabled]{
+  background: none;
+}
+
+.group .btn-default[disabled]:hover{
+  border-bottom: 1px solid #ff3200;
+}
+
+.counterLabel{
+  font-size:.6em;
+}
